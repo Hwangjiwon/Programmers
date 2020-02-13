@@ -3,10 +3,11 @@
 
 https://programmers.co.kr/learn/courses/30/lessons/43162?language=java#
 <
-class Solution {
-    static boolean[][] visited;
+
     
-    public int solution(int n, int[][] computers) {
+    public class Solution {
+    
+    static boolean[][] visited;int solution(int n, int[][] computers) {
         int answer = 0;
         visited = new boolean[n][n];
         
@@ -27,7 +28,7 @@ class Solution {
                 visited[to][from] = true;
                 dfs(to, n, computers);
             }
-        }
-    }
-}
+          }
+       }
+   }
 >
