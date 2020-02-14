@@ -32,3 +32,27 @@ https://programmers.co.kr/learn/courses/30/lessons/43162?language=java#
        }
    }
 >
+
+
+<
+
+
+    class Solution {
+    class Word {
+        String str;
+        int cnt;
+        public Word(String str, int cnt){
+            this.str = str;
+            this.cnt = cnt;
+        }
+    }
+    public int solution(String s) {
+        int answer = 0;
+        String buf = s;
+        buf
+        return answer;
+    }
+    }
+
+
+>
