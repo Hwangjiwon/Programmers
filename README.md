@@ -34,25 +34,28 @@ https://programmers.co.kr/learn/courses/30/lessons/43162?language=java#
 >
 
 
+<h3>소수찾기</h3> 
+https://programmers.co.kr/learn/courses/30/lessons/12921 <br>
+참고 : https://marobiana.tistory.com/91
 <
-
-
+    
     class Solution {
-    class Word {
-        String str;
-        int cnt;
-        public Word(String str, int cnt){
-            this.str = str;
-            this.cnt = cnt;
-        }
+     public int solution(int n) {
+      int answer = 0;
+      boolean flag;
+      
+      for(int i = 2; i <= n; i++){
+          flag = true;
+          for(int j = 2; j <= Math.sqrt(i) ; j++){
+              if(i%j == 0){
+                  flag = false;
+                  break;
+              }
+          }
+          if(flag == true) answer++;
+      }
+      return answer;
+     }
     }
-    public int solution(String s) {
-        int answer = 0;
-        String buf = s;
-        buf
-        return answer;
-    }
-    }
-
-
 >
+
