@@ -1,0 +1,7 @@
+## MIN, MAX, SUM
+
+<
+  SELECT MIN(컬럼) FROM 테이블;
+  SELECT MAX(컬럼) FROM 테이블;
+  SELECT SUM(컬럼) FROM 테이블;
+>
