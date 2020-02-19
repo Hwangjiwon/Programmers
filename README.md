@@ -59,3 +59,33 @@ https://programmers.co.kr/learn/courses/30/lessons/12921 <br>
     }
 >
 
+
+<h3>K번째수<h3>
+https://programmers.co.kr/learn/courses/30/lessons/42748
+
+다른 방법:
+Arrays.copyOfRange(array, commands[i][0]-1, commands[i][1]);
+<   
+        
+    import java.util.ArrayList;
+    import java.util.Collections;
+        
+     class Solution {
+        public int[] solution(int[] array, int[][] commands) {
+         int[] answer = new int[commands.length];
+
+        for(int a=0; a<commands.length; a++){
+            ArrayList<Integer> arr = new ArrayList<Integer>();
+
+            for(int i=commands[a][0]-1; i<commands[a][1]; i++){
+                arr.add(array[i]);
+            }
+
+            Collections.sort(arr);
+            answer[a] = arr.get(commands[a][2]-1);
+
+        }
+        return answer;
+     }
+    }
+>
