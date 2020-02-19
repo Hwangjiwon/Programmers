@@ -60,7 +60,7 @@ https://programmers.co.kr/learn/courses/30/lessons/12921 <br>
 >
 
 
-<h3>K번째수<h3> <br>
+<h3>K번째수</h3>
 https://programmers.co.kr/learn/courses/30/lessons/42748
 
 다른 방법:
